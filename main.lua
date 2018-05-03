@@ -300,7 +300,7 @@ local function onCollision(event)
 
 			    yCoordFlipped = -1,
 
-			    blendFuncSource = 770,
+			    blendFuncSource = 769,
 
 			    rotatePerSecondVariance = 153.95,
 
@@ -312,7 +312,7 @@ local function onCollision(event)
 
 			    finishColorGreen = 0.5443883,
 
-			    blendFuncDestination = 1,
+			    blendFuncDestination = 769,
 
 			    startParticleSize = 400.95,
 
@@ -322,7 +322,7 @@ local function onCollision(event)
 
 			    startColorVarianceAlpha = 1,
 
-			    maxParticles = 256,
+			    maxParticles = 100,
 
 			    finishParticleSize = 540,
 
@@ -334,7 +334,9 @@ local function onCollision(event)
 
 			    finishParticleSizeVariance = 250,
 
-			    gravityy = -671.05,
+			    gravityy = -6710.05,
+
+			    gravityx = -8000,
 
 			    speedVariance = 90.79,
 
@@ -349,8 +351,6 @@ local function onCollision(event)
 			local emitter = display.newEmitter(emitterParams)
 			emitter.x = explosionLocationX
 			emitter.y = explosionLocationY
-
-
 		end
 	end
 end
